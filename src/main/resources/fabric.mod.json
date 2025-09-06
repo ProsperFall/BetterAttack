@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "better_attack",
+	"version": "${version}",
+	"name": "BetterAttack",
+	"description": "Allow you attack though grass!",
+	"authors": [
+		"Pro Chan"
+	],
+	"contact": {
+		"homepage": "https://github.com/ProsperFall/BetterAttack",
+		"sources": "https://github.com/ProsperFall/BetterAttack"
+	},
+	"license": "MIT",
+	"icon": "assets/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.init.AttackThoughGrassClientSide"
+		]
+	},
+	"mixins": [
+		"better_attack.mixins.json",
+		{
+			"config": "better_attack.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
