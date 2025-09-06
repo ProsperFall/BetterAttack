@@ -24,7 +24,7 @@ public class AttackThoughGrassClientSide implements ClientModInitializer {
 		//我希望这里能写好点，但为了赶工不得不这样做，下个版本使用较好的方案，但是目前不能。我希望你能提供帮助。
 		//我并不保证他工作正常
 		weapon = new StringBuilder[14];
-		blocksAllowedToIgnore = new StringBuilder[16];
+		blocksAllowedToIgnore = new StringBuilder[17];
 
 		weapon[0] = new StringBuilder("minecraft:wooden_sword");
 		weapon[1] = new StringBuilder("minecraft:stone_sword");
@@ -34,10 +34,10 @@ public class AttackThoughGrassClientSide implements ClientModInitializer {
 		weapon[5] = new StringBuilder("minecraft:netherite_sword");
 		weapon[6] = new StringBuilder("minecraft:wooden_axe");
 		weapon[7] = new StringBuilder("minecraft:stone_axe");
-		weapon[8] = new StringBuilder("minecraft:iron_axes");
-		weapon[9] = new StringBuilder("minecraft:golden_axes");
-		weapon[10] = new StringBuilder("minecraft:diamond_axes");
-		weapon[11] = new StringBuilder("minecraft:netherite_axes");
+		weapon[8] = new StringBuilder("minecraft:iron_axe");
+		weapon[9] = new StringBuilder("minecraft:golden_axe");
+		weapon[10] = new StringBuilder("minecraft:diamond_axe");
+		weapon[11] = new StringBuilder("minecraft:netherite_axe");
 		weapon[12] = new StringBuilder("minecraft:trident");
 		weapon[13] = new StringBuilder("minecraft:mace");
 		//这里只包含一些典型的坑人方块
@@ -58,5 +58,6 @@ public class AttackThoughGrassClientSide implements ClientModInitializer {
 		blocksAllowedToIgnore[13] = new StringBuilder("Block{"+"minecraft:lilac"+"}");
 		blocksAllowedToIgnore[14] = new StringBuilder("Block{"+"minecraft:rose_bush"+"}");
 		blocksAllowedToIgnore[15] = new StringBuilder("Block{"+"minecraft:peony"+"}");
+		blocksAllowedToIgnore[16] = new StringBuilder("Block{"+"minecraft:pale_hanging_moss"+"}");
 	}
 }
